@@ -15,7 +15,7 @@ public class Server {
     	
     	Server ob = new Server();
     	
-    	get("/home", (req, res) -> "/hanu/data - for sending data to pc, replace 'data' with your Data.<br>" +
+    	get("/home", (req, res) -> "/mtc/data - for sending data to pc, replace 'data' with your Data.<br>" +
     							   "/take - send data to phone browser." +
     							   "<br><br>To Get IPv4<br>" +
     							   "- Open terminal<br>" +
@@ -27,7 +27,7 @@ public class Server {
     	
     	//RECIEVE DATA FROM MOBILE
     	
-    	get("/hanu/:data", (req, res) -> {
+    	get("/mtc/:data", (req, res) -> {
     		
     		System.out.println(req.params(":data"));
     		return 777;
@@ -36,7 +36,7 @@ public class Server {
     	
     	//SEND DATA FROM PC TO BROWSER (PHONE)
     	
-    	get("/take", (req, res) -> {
+    	get("/ctm", (req, res) -> {
     		
     		String data = ob.giveData();
     		res.body(data);
