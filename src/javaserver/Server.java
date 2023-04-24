@@ -16,7 +16,7 @@ public class Server {
     	Server ob = new Server();
     	
     	get("/home", (req, res) -> "/mtc/:data - for sending data to pc, replace 'data' with your Data.<br>" +
-    							   "/take - send data to phone browser." +
+    							   "/ctm - send data to phone browser." +
     							   "<br><br>To Get IPv4<br>" +
     							   "- Open terminal<br>" +
     							   "- type 'ipconfig'<br>" +
@@ -36,7 +36,7 @@ public class Server {
     	
     	//SEND DATA FROM PC TO BROWSER (PHONE)
     	
-    	get("/take", (req, res) -> {
+    	get("/ctm", (req, res) -> {
     		
     		String data = ob.giveData();
     		res.body(data);
