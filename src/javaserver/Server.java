@@ -36,7 +36,7 @@ public class Server {
     	
     	//SEND DATA FROM PC TO BROWSER (PHONE)
     	
-    	get("/ctm", (req, res) -> {
+    	get("/take", (req, res) -> {
     		
     		String data = ob.giveData();
     		res.body(data);
