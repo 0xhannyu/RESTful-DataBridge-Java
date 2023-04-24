@@ -15,7 +15,7 @@ public class Server {
     	
     	Server ob = new Server();
     	
-    	get("/home", (req, res) -> "/mtc/data - for sending data to pc, replace 'data' with your Data.<br>" +
+    	get("/home", (req, res) -> "/mtc/:data - for sending data to pc, replace 'data' with your Data.<br>" +
     							   "/take - send data to phone browser." +
     							   "<br><br>To Get IPv4<br>" +
     							   "- Open terminal<br>" +
